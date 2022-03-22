@@ -4,7 +4,7 @@
 int main()
 {
   FILE *f1, *f2;
-  char arr[1001][1001], s; 
+  char arr[101][101], s; 
   int i = 0, j = 0;
   f1 = fopen("ИМЯ ФАЙЛА С МАТРИЦЕЙ", "r");
   while (!feof(f1))
