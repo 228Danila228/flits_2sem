@@ -4,9 +4,9 @@
 int main()
 {
   FILE *f1, *f2;
-  char arr[101][101], s; 
+  char arr[20][20], s; 
   int i = 0, j = 0;
-  f1 = fopen("ИМЯ ФАЙЛА С МАТРИЦЕЙ", "r");
+  f1 = fopen("matrix_of_incendence13.txt", "r");
   while (!feof(f1))
   {
     fscanf(f1, "%c", &s);
@@ -52,4 +52,7 @@ int main()
   }
   fprintf(f2, "}");
   fclose(f2);
+  system("dot graf.gv -Tpng -o image.png"); 
+  system("image.png");
+  return 0;
 }
