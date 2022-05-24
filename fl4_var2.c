@@ -7,8 +7,6 @@ void swap(int *a, int *b)
     *a = *b;
     *b = t;
 }
-
-
 int partition(int *array, int *num, int low, int high) {
     int pivot = array[high];
     int i = (low - 1);
@@ -26,7 +24,6 @@ int partition(int *array, int *num, int low, int high) {
     swap(&num[i + 1], &num[high]);
     return (i + 1);
 }
-
 void quickSort(int *array, int *num, int low, int high)
 {
     if (low < high) 
@@ -36,7 +33,6 @@ void quickSort(int *array, int *num, int low, int high)
         quickSort(array, num, pi + 1, high);
     }
 }
-
 int main()
 {
     FILE *matr;
